@@ -1,0 +1,520 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.barra-topo {
+  height: 54px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+.icones-no-topo {
+  width: 942px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alinhador-topo {
+  width: 935px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icone-e-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.classe-icone ion-icon {
+  font-size: 22px;
+}
+
+.barrinha-superior {
+  width: 1px;
+  height: 22px;
+  margin: 0 10px 0;
+  background-color: #dbdbdb;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.barra-de-pesquisa {
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.barra-de-pesquisa:focus {
+  border: 1px solid #dbdbdb;
+}
+
+.icone {
+  font-size: 22px;
+}
+
+.icones-laterais {
+  width: 126px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fundo {
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.uniao-de-colunas {
+  margin-top: 34px;
+  display: flex;
+  position: relative;
+}
+
+.coluna-principal-esquerda {
+  width: 614px;
+}
+
+.bolinhas-topo {
+  background-color: #ffffff;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  padding: 23px 23px 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bolinhas-escapantes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bolinha {
+  height: 66px;
+  width: 66px;
+  background-image: url(./assets/stories_background.png);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centro-redondinho {
+  width: 56px;
+  height: 56px;
+}
+
+.setinha {
+  color: #ffffff;
+  position: absolute;
+  right: 9px;
+  top: 46px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bolinha-com-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94px;
+  margin: 0 5px 10px;
+}
+
+.texto-bolinha {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 0 4px;
+}
+
+.posts {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  margin: 24px 0 60px;
+}
+
+.titulo-do-post {
+  display: flex;
+  justify-content: space-between;
+  height: 61px;
+}
+
+.postante {
+  display: flex;
+  align-items: center;
+  margin-left: 17px;
+}
+
+.foto-do-postante {
+  height: 32px;
+  width: 32px;
+}
+
+.nome-do-postante {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.tres-pontinhos {
+  display: flex;
+  align-items: center;
+  margin-right: 17px;
+}
+
+.icones-nos-comentarios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px 10px;
+}
+
+.icones-esquerda {
+  width: 16%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expandir {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.curtidas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px 7px;
+  padding: 0 15px 0;
+}
+
+.comentario-escrito {
+  display: flex;
+}
+
+.quem-curtiu {
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.escrever-comentario {
+  height: 53px;
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorriso-comentario {
+  font-size: 33px;
+}
+
+.sorriso-e-escrita {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin-left: 10px;
+}
+
+input {
+  word-break: break-all;
+}
+
+.input-comentario {
+  margin-left: 10px;
+  border: none;
+  width: 90%;
+}
+
+.botao-publicar {
+  display: flex;
+  align-items: center;
+  margin-right: 19px;
+}
+
+.texto-publicar {
+  font-weight: 500;
+  color: #b2dffc;
+  font-size: 14px;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.texto-publicar:hover {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.tempo {
+  padding: 5px 15px 25px;
+}
+
+.demora {
+  font-weight: 400;
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+.icone-curtida {
+  height: 20px;
+  width: 20px;
+}
+
+.negrito {
+  font-weight: 500 !important;
+}
+
+.comentario {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 5px;
+}
+
+.curtida-no-comentario {
+  padding-right: 10px;
+}
+
+.coracaozinho-curtida {
+  font-size: 14px;
+}
+
+.seguidor-catana {
+  color: #a9a9a9;
+  font-weight: 300;
+}
+
+video {
+  width: 100%;
+}
+
+.coluna-principal-direita {
+  height: 100%;
+  width: 293px;
+  margin-left: 28px;
+}
+
+.coluna-direita-fixed {
+  width: 293px;
+  position: fixed;
+  top: 111px;
+}
+
+.catana-comics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.textos-do-catana {
+  margin-left: 17px;
+}
+
+.cinzeiro {
+  color: #8e8e8e;
+}
+
+.sugestoes-pra-voce {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sugestao-individual {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.sugestoes-em-si {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.dedao-e-texto {
+  display: flex;
+}
+
+.dedao-lateral {
+  height: 32px;
+  width: 32px;
+  margin-right: 11px;
+}
+
+.peso-medio {
+  font-weight: 400;
+}
+
+.seguimento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #139ef2;
+}
+
+.sobre {
+  margin-top: 33px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.varias-palavras {
+  color: #c7c7c7;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.barrinha-celular {
+  display: none;
+}
+
+@media (max-width: 934px) {
+  .icone-e-logo {
+    flex-wrap: nowrap;
+    margin-left: 2.223%;
+  }
+
+  .icones-laterais {
+    margin-right: 2.223%;
+  }
+
+  .coluna-principal-direita {
+    display: none;
+  }
+
+  .coluna-principal-esquerda {
+    margin: 34px auto;
+  }
+}
+
+@media (max-width: 613px) {
+  #compasso-topo {
+    display: none;
+  }
+  #coracaozinho-topo {
+    display: none;
+  }
+  #sujeito-daora-topo {
+    display: none;
+  }
+
+  .icone-e-logo {
+    flex-wrap: nowrap;
+    margin-left: 3.27%;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: flex;
+  }
+
+  .barrinha-superior {
+    display: none;
+  }
+
+  .icones-laterais {
+    margin-right: 3.27%;
+    width: auto;
+  }
+
+  .barra-de-pesquisa {
+    display: none;
+  }
+
+  .setinha {
+    display: none;
+  }
+
+  .uniao-de-colunas {
+    width: 100%;
+  }
+
+  .imagem-do-post img {
+    width: 100%;
+  }
+
+  .coluna-principal-direita {
+    display: none;
+  }
+
+  .coluna-principal-esquerda {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .bolinhas-topo {
+    background-color: #e5e5e5;
+  }
+
+  .fundo {
+    margin-bottom: 54px;
+  }
+
+  .curtidas {
+    padding: 0;
+  }
+
+  .curtidas img {
+    margin-left: 14px;
+  }
+
+  .barrinha-celular {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+  }
+
+  .icones-inferiores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 19px 0;
+    height: 100%;
+    width: 100%;
+  }
+}
